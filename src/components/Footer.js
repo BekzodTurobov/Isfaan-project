@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./Footer.module.css";
 import { facebookIcon } from "../svg/svg";
 import { instagramIcon } from "../svg/svg";
@@ -33,15 +34,15 @@ export default function Footer(props) {
           </div>
 
           <div className={classes.footerFeedback}>
-            <a className={classes.footerLink} href="#">
+            <Link className={classes.footerLink} to="#">
               {facebookIcon}
-            </a>
-            <a className={classes.footerLink} href="#">
+            </Link>
+            <Link className={classes.footerLink} to="#">
               {instagramIcon}
-            </a>
-            <a className={classes.footerLink} href="#">
+            </Link>
+            <Link className={classes.footerLink} to="#">
               {telegramIcon}
-            </a>
+            </Link>
           </div>
         </div>
         <FooterForm />

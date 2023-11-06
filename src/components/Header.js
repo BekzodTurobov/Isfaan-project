@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../img/logo.png";
 import classes from "./Header.module.css";
 import { briefCaseFullIcon } from "../svg/svg";
@@ -63,67 +64,67 @@ function Header() {
             </li>
             <li className={classes.navTopItem}>
               <span className={classes.navTopIcon}>{briefCaseFullIcon}</span>
-              <a className={classes.navTopLink} href="#">
+              <Link className={classes.navTopLink} to="#">
                 {t("header.company")}
-              </a>
+              </Link>
             </li>
             <li className={classes.navTopItem}>
               <span className={classes.navTopIcon}>{headPhonesIcon}</span>
-              <a className={classes.navTopLink} href="#">
+              <Link className={classes.navTopLink} to="#">
                 {t("header.contacts")}
-              </a>
+              </Link>
             </li>
           </ul>
           {/* //////////////// */}
           <div className={classes.navBottom}>
             <ul className={classes.navBottomItems}>
               <li className={classes.navBottomitem}>
-                <a
+                <Link
                   className={`${classes.navBottomLink} ${classes.underline}`}
-                  href="#"
+                  to="#"
                 >
                   {t("header.building")}
-                </a>
+                </Link>
               </li>
               <li className={classes.navBottomItem}>
-                <a
+                <Link
                   className={`${classes.navBottomLink} ${classes.underline}`}
-                  href="#"
+                  to="#"
                 >
                   {t("header.production")}
-                </a>
+                </Link>
               </li>
               <li className={classes.navBottomItem}>
-                <a
+                <Link
                   className={`${classes.navBottomLink} ${classes.underline}`}
-                  href="#"
+                  to="#"
                 >
                   {t("header.textiles")}
-                </a>
+                </Link>
               </li>
               <li className={classes.navBottomItem}>
-                <a
+                <Link
                   className={`${classes.navBottomLink} ${classes.underline}`}
-                  href="#"
+                  to="#"
                 >
                   {t("header.news")}
-                </a>
+                </Link>
               </li>
               <li className={classes.navBottomItem}>
-                <a
+                <Link
                   className={`${classes.navBottomLink} ${classes.underline}`}
-                  href="#"
+                  to="#"
                 >
                   {t("header.gallery")}
-                </a>
+                </Link>
               </li>
               <li className={classes.navBottomItem}>
-                <a
+                <Link
                   className={`${classes.navBottomLink} ${classes.underline}`}
-                  href="#"
+                  to="#"
                 >
                   {t("header.catalog")}
-                </a>
+                </Link>
               </li>
             </ul>
             <div className={classes.callCentreBox}>

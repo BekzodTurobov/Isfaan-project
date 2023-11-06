@@ -9,7 +9,7 @@ footer {
 .footerContainer {
   height: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: column;
   gap: 4rem;
 
