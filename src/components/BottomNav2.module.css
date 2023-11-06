@@ -1,0 +1,40 @@
+.containerBottom {
+}
+.advItems {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.advItem {
+}
+
+.advItem div {
+  width: 8rem;
+  height: 8rem;
+  background-image: url(../img/zgg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* z-index: 1; */
+  position: relative;
+}
+
+.advNum {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #9b735e;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.advLink {
+  color: #ddd;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+}

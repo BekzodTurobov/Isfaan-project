@@ -1,0 +1,30 @@
+.projects {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  overflow: auto;
+}
+
+.projects::-webkit-scrollbar {
+  opacity: 0;
+}
+
+.project {
+  position: relative;
+}
+
+.projectImg {
+  width: 40rem;
+  height: auto;
+  border-radius: 12px;
+}
+
+.projectName {
+  color: #c7e2dd;
+  font-size: 3rem;
+  font-weight: 600;
+
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+}

@@ -1,0 +1,13 @@
+{
+  "header": {
+    "company": "About us",
+    "contacts": "Contacts",
+    "building": "Construction",
+    "production": "Manufacturing",
+    "textiles": "Textiles",
+    "news": "News",
+    "gallery": "Gallery",
+    "catalog": "Catalogy",
+    "support": "Support"
+  }
+}

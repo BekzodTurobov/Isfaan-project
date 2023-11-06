@@ -1,0 +1,32 @@
+import { IoBriefcase } from "react-icons/io5";
+import { PiBriefcaseLight } from "react-icons/pi";
+import { TfiHeadphoneAlt } from "react-icons/tfi";
+import { TbSettingsStar } from "react-icons/tb";
+import { PiSealCheck } from "react-icons/pi";
+import { HiPhone } from "react-icons/hi";
+import { IoIosMail } from "react-icons/io";
+import { GoArrowRight } from "react-icons/go";
+import { GoArrowLeft } from "react-icons/go";
+import { RiFacebookFill } from "react-icons/ri";
+import { RiInstagramLine } from "react-icons/ri";
+import { BiLogoTelegram } from "react-icons/bi";
+import { FaChevronDown } from "react-icons/fa6";
+
+const sizeSm = { width: "1.8rem", height: "1.8rem" };
+const sizeMd = { width: "2rem", height: "2rem" };
+const sizeL = { width: "3rem", height: "3rem" };
+const sizeXL = { width: "3.5rem", height: "3.5rem" };
+
+export const briefCaseFullIcon = <IoBriefcase style={sizeMd} />;
+export const headPhonesIcon = <TfiHeadphoneAlt style={sizeMd} />;
+export const briefCaseAltIcon = <PiBriefcaseLight style={sizeXL} />;
+export const settingsIcon = <TbSettingsStar style={sizeXL} />;
+export const checkedIcon = <PiSealCheck style={sizeXL} />;
+export const phoneIcon = <HiPhone style={sizeSm} />;
+export const facebookIcon = <RiFacebookFill style={sizeL} />;
+export const instagramIcon = <RiInstagramLine style={sizeL} />;
+export const telegramIcon = <BiLogoTelegram style={sizeL} />;
+export const messageIcon = <IoIosMail />;
+export const rightArrowIcon = <GoArrowRight />;
+export const leftArrowIcon = <GoArrowLeft />;
+export const downIcon = <FaChevronDown />;

@@ -1,0 +1,219 @@
+.mainHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* background-image: linear-gradient(
+    to bottom,
+    #f8f4e8 25%,
+    rgba(248, 244, 232, 0.8) 60%,
+    rgba(248, 244, 232, 0.5) 83%,
+    rgba(248, 244, 232, 0.05) 100%
+  ); */
+
+  background-image: linear-gradient(
+    to bottom,
+    rgb(3, 187, 157) 10%,
+    rgba(0, 205, 172, 0.8) 55%,
+    rgba(141, 218, 213, 0.05) 90%
+  );
+  padding-top: 1rem;
+  padding-inline: 8rem;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 150rem;
+  margin-inline: auto;
+}
+.logoBox {
+  animation: flipLogo infinite 20s cubic-bezier(0.75, -0.5, 0.35, 1.5);
+  cursor: pointer;
+}
+.logo {
+  width: 11rem;
+}
+.navbar {
+  width: 100%;
+}
+.navTopItems {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 1.4rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.navTopItem {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navTopItem:nth-child(4) {
+  margin-left: auto;
+}
+
+.navTopLink {
+  font-size: 1.4rem;
+  color: #201d1d;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navTopLink:hover,
+.navTopLink:active {
+  color: #dcf5f1;
+}
+
+.active {
+  color: #fff !important;
+  background-color: #aa8876;
+  padding: 3px 13px;
+}
+
+.navTopIcon {
+  color: #aa8876;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+.navBottomItems {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+  font-size: 1.4rem;
+}
+.navBottomItem {
+}
+.navBottomLink {
+  color: #201d1d;
+  text-decoration: none;
+}
+
+.underline {
+  position: relative;
+  cursor: pointer;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 300ms ease;
+  transform-origin: right;
+  background-color: #dcb95d;
+  border-radius: 8px;
+}
+
+.underline:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.callCentreBox {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.callBtn {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #aa8876;
+  border: none;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.callBtn::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(196, 186, 186);
+
+  transition: all 0.4s;
+  animation: pulseWhiteAfter infinite 2s ease-out;
+  z-index: -1;
+}
+
+.phoneNumBox {
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.phoneNumber {
+  font-weight: 700;
+}
+.phoneNumText {
+  display: block;
+}
+
+@keyframes pulseWhiteAfter {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* 
+@keyframes pulseWhite {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(203, 52, 43, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(203, 52, 43, 0);
+  }
+} */
+
+@keyframes flipLogo {
+  0% {
+    transform: rotateY(0);
+  }
+  5% {
+    transform: rotateY(180deg);
+  }
+  10% {
+    transform: rotateY(0);
+  }
+}
