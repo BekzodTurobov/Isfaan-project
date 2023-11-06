@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./index.css";
 
 import Wrapper from "./components/Wrapper";
@@ -13,7 +13,6 @@ function App() {
   // return <>{load && <Wrapper />}</>;
   return (
     <>
-      {" "}
       <Wrapper />
     </>
   );
